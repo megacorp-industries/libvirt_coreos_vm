@@ -49,7 +49,7 @@ A description of the settable variables for this role should go here, including 
         storage:
           files:
           - path: /etc/sysctl.d/11-lowports.conf
-            conetnts:
+            contents:
               source: "data:,net.ipv4.ip_unprivileged_port_start=53"
         systemd:
           units:
