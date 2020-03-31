@@ -1,4 +1,4 @@
-# Role Name
+# libvirt_coreos_vm
 
 An ansible role to deploy [Fedora CoreOS](https://getfedora.org/en/coreos/) and [Red Hat CoreOS](https://docs.openshift.com/container-platform/latest/architecture/architecture-rhcos.html) virtual machines into QEMU/KVM.
 
@@ -38,6 +38,7 @@ A description of the settable variables for this role should go here, including 
 ---
 - name: Administer virtual machine
   hosts: localhost
+  gather_facts: false
   tasks:
   - name: Deploy Fedora CoreOS virtual machine
     vars:
