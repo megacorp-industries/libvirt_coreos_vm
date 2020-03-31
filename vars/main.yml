@@ -12,5 +12,5 @@ rhcos_qcow2_url: "http://mirror.openshift.com/pub/openshift-v4/dependencies/rhco
 # Libosinfo url for virtual machine metadata
 # Types can be listed with $(osinfo-query os)
 lib_os_info: "{{ (coreos_type == 'fedora')
-                | ternary('http://fedoraproject.org/fedora/' + fedora_version,
-                          'http://redhat.com/rhel/7.4' + redhat_version) }}"
+                | ternary('http://fedoraproject.org/fedora/' + fedora_version | string,
+                          'http://redhat.com/rhel/7.4' + redhat_version | string) }}"
