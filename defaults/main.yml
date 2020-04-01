@@ -52,9 +52,6 @@ vm_network_name: default
 # Network bridge to deploy virtual machine interface on
 vm_network_bridge: virbr0
 
-# OS variant of domain
-vm_os_variant: fedora31
-
 # Major version of Fedora. Used for Libvirt libosinfo metadata
 fedora_version: 31
 
