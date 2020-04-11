@@ -72,6 +72,8 @@
   virt:
     state: running
     name: "{{ vm_name }}"
+  # Sometimes this task will fail with "Failed to get "write" lock" error
+  failed_when: false
   when: create_domain.changed
 
 # Fallback when virt module doesn't work
