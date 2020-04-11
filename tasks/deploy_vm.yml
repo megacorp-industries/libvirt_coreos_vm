@@ -65,7 +65,7 @@
     name: "{{ vm_name }}"
   register: start_domain
   # Retry a few times to avoid "Failed to get "write" lock" error
-  until: "'Failed to get' not in start_domain.stdout"
+  until: "'Failed to get' not in start_domain.stderr"
   retries: 5
   delay: 5
 
