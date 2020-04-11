@@ -64,10 +64,9 @@
     state: running
     name: "{{ vm_name }}"
   register: start_domain
-  # Retry a few times to avoid "Failed to get "write" lock" error
-  until: "'Failed to get' not in start_domain.stderr"
-  retries: 5
-  delay: 5
+  failed_when:
+  - "'Failed to get' not in start_domain.stderr"
+  - start_domain.rc != 0
 
 # Fallback when virt module doesn't work
 #- name: Create domain
