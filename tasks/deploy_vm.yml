@@ -63,6 +63,11 @@
   virt:
     state: running
     name: "{{ vm_name }}"
+  register: start_domain
+  # Retry a few times to avoid "Failed to get "write" lock" error
+  until: "'Failed to get \"write\" lock' not in start_domain.stdout"
+  retries: 5
+  delay: 5
 
 # Fallback when virt module doesn't work
 #- name: Create domain
