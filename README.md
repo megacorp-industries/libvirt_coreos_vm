@@ -25,7 +25,7 @@ A description of the settable variables for this role should go here, including 
 | vm_memory | no | 2048 | | Amount of memory in MiB |
 | vm_disk_size | no | 20G | | Root disk size in GB. Must end in a single 'G' |
 | vm_network_name | no | default | | QEMU/KVM network to deploy domain into |
-| vm_network_bridge | no | virbr0 | | Host bridge to put virtual machine interface on |
+| vm_network_bridge | no | br0 | | Host bridge to put virtual machine interface on |
 | fedora_version | no | 31 | | When deploying Fedora CoreOS. Major Fedora version to use for QEMU/KVM libosprofile |
 | fcos_stream | no | stable | | Stream to download Fedora CoreOS build from. |
 | fcos_build | no | 38.20230819.3.0 | | Fedora CoreOS build number to download |
