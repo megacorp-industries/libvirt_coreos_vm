@@ -7,7 +7,7 @@ An ansible role to deploy [Fedora CoreOS](https://getfedora.org/en/coreos/) and 
 This is tested on a host running the following
 * Ansible 2.15.2
 * Fedora 38
-* libvirtd 9.0.0
+* libvirtd .0
 
 ## Role Variables
 
@@ -28,7 +28,7 @@ A description of the settable variables for this role should go here, including 
 | vm_network_bridge | no | virbr0 | | Host bridge to put virtual machine interface on |
 | fedora_version | no | 31 | | When deploying Fedora CoreOS. Major Fedora version to use for QEMU/KVM libosprofile |
 | fcos_stream | no | stable | | Stream to download Fedora CoreOS build from. |
-| fcos_build | no | 31.20200310.3.0 | | Fedora CoreOS build number to download |
+| fcos_build | no | 38.20230819.3.0 | | Fedora CoreOS build number to download |
 | redhat_version | no | 8.1 | | When deploying Red Hat CoreOS. Major Red Hat version to use for QEMU/KVM libosprofile |
 | rhcos_build | no | 4.3.8 | | Red Hat CoreOS build number to download |
 

@@ -50,15 +50,15 @@ vm_disk_size: 20G
 vm_network_name: default
 
 # Network bridge to deploy virtual machine interface on
-vm_network_bridge: virbr0
+vm_network_bridge: br0
 
 # Major version of Fedora. Used for Libvirt libosinfo metadata
-fedora_version: 31
+fedora_version: 38
 
 # Build number and stream of Fedora CoreOS
 # https://builds.coreos.fedoraproject.org/browser
 fcos_stream: stable
-fcos_build: 31.20200323.3.2
+fcos_build: 38.20230819.3.0
 
 # Major version of RHEL. Used for Libvirt libosinfo metadata
 redhat_version: 8.1
