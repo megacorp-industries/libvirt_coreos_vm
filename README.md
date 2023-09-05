@@ -5,9 +5,9 @@ An ansible role to deploy [Fedora CoreOS](https://getfedora.org/en/coreos/) and 
 ## Requirements
 
 This is tested on a host running the following
-* Ansible 2.9.6
-* Fedora 31
-* libvirtd 5.6.0
+* Ansible 2.15.2
+* Fedora 38
+* libvirtd 9.0.0
 
 ## Role Variables
 
