@@ -46,6 +46,9 @@ vm_memory: 2048
 # Must be larger than original template image size (~8G)
 vm_disk_size: 20G
 
+# Network interface type 
+vm_interface_type: bridge
+
 # Network to deploy virtual machine into
 vm_network_name: default
 
