@@ -33,7 +33,6 @@ vm_name: coreos
 
 # Virtual machine MAC address
 # Generate a new one with: $(date +%s | md5sum | head -c 6 | sed -e 's/\([0-9A-Fa-f]\{2\}\)/\1:/g' -e 's/\(.*\):$/\1/' | sed -e 's/^/52:54:00:/')
-vm_mac: 52:54:00:7b:0a:16
 
 # Virtual machine cpu cores
 vm_cpus: 2
@@ -44,7 +43,7 @@ vm_memory: 2048
 # Virtual machine disk size in GB
 # Must be an integer followed by G (i.e. 20G)
 # Must be larger than original template image size (~8G)
-vm_disk_size: 20G
+vm_disk_size: 30G
 
 # Network interface type 
 vm_interface_type: bridge

@@ -83,7 +83,6 @@
       <address type="pci" domain="0x0000" bus="0x00" slot="0x01" function="0x6"/>
     </controller>
     <interface type='{{ vm_interface_type }}'>
-      <mac address='{{ vm_mac }}'/>
       <source bridge='{{ vm_network_bridge }}'/>
       <model type='virtio'/>
     </interface>
